@@ -111,6 +111,11 @@
         "symfony": {
             "allow-contrib": "true",
             "require": "6.4.*"
+        },
+        "patches": {
+            "spatie/color": {
+                "Added setters for Hsl class members": "patches/hsl-setters.patch"
+            }
         }
     },
     "require-dev": {

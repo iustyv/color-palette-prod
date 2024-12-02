@@ -1,0 +1,24 @@
+diff --git a/vendor/spatie/color/src/Hsl.php b/vendor/spatie/color/src/Hsl.php
+index d11a21f..d06e3db 100644
+--- a/vendor/spatie/color/src/Hsl.php
++++ b/vendor/spatie/color/src/Hsl.php
+@@ -117,4 +117,19 @@ class Hsl implements Color
+ 
+         return "hsl({$hue},{$saturation}%,{$lightness}%)";
+     }
++
++    public function setHue(float $hue): void
++    {
++        $this->hue = $hue;
++    }
++
++    public function setSaturation(float $saturation): void
++    {
++        $this->saturation = $saturation;
++    }
++
++    public function setLightness(float $lightness): void
++    {
++        $this->lightness = $lightness;
++    }
+ }
