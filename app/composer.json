@@ -115,7 +115,8 @@
         "patches": {
             "spatie/color": {
                 "Added setters for Hsl class members": "patches/hsl-setters.patch",
-                "Added luminance method in Contrast class": "patches/luminance-method.patch"
+                "Added luminance method in Contrast class": "patches/luminance-method.patch",
+                "Changed int cast to float in contrast method": "patches/int-cast-to-float.patch"
             }
         }
     },
