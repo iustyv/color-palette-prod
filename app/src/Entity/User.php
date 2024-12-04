@@ -23,11 +23,17 @@ use Symfony\Component\Validator\Constraints as Assert;
 #[ORM\UniqueConstraint(name: 'UNIQ_IDENTIFIER_USERNAME', fields: ['username'])]
 class User implements UserInterface, PasswordAuthenticatedUserInterface
 {
+    /**
+     * Primary key.
+     */
     #[ORM\Id]
     #[ORM\GeneratedValue]
     #[ORM\Column]
     private ?int $id = null;
 
+    /**
+     * Username.
+     */
     #[ORM\Column(type: 'string', length: 180, unique: true)]
     #[Assert\NotBlank]
     #[Assert\Type('string')]
@@ -35,13 +41,15 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     private ?string $username = null;
 
     /**
-     * @var list<string> The user roles
+     * User roles.
+     *
+     * @var list<string>
      */
     #[ORM\Column(type: 'json')]
     private array $roles = [];
 
     /**
-     * @var string|null The hashed password
+     * Hashed password.
      */
     #[ORM\Column(type: 'string', length: 255)]
     #[Assert\NotBlank]
@@ -49,6 +57,9 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     #[Assert\Length(min: 8, max: 255)]
     private ?string $password = null;
 
+    /**
+     * Created at.
+     */
     #[ORM\Column(type: 'datetime_immutable')]
     #[Assert\Type(\DateTimeImmutable::class)]
     #[Gedmo\Timestampable(on: 'create')]
@@ -136,6 +147,8 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
 
     /**
      * Setter for password.
+     *
+     * @param string $password Password
      */
     public function setPassword(string $password): void
     {
