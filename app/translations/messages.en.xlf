@@ -10,6 +10,34 @@
                 <source>label.role_admin</source>
                 <target>Admin</target>
             </trans-unit>
+            <trans-unit id="label.username">
+                <source>label.username</source>
+                <target>Username</target>
+            </trans-unit>
+            <trans-unit id="label.password">
+                <source>label.password</source>
+                <target>Password</target>
+            </trans-unit>
+            <trans-unit id="label.repeated_password">
+                <source>label.repeated_password</source>
+                <target>Repeat password</target>
+            </trans-unit>
+            <trans-unit id="label.sign_up">
+                <source>label.sign_up</source>
+                <target>Sign up</target>
+            </trans-unit>
+            <trans-unit id="message.invalid_repeated_password">
+                <source>message.invalid_repeated_password</source>
+                <target>Invalid password.</target>
+            </trans-unit>
+            <trans-unit id="page.sign_up">
+                <source>page.sign_up</source>
+                <target>Sign up</target>
+            </trans-unit>
+            <trans-unit id="title.sign_up">
+                <source>title.sign_up</source>
+                <target>Sign up</target>
+            </trans-unit>
         </body>
     </file>
 </xliff>
