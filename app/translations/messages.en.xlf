@@ -10,6 +10,18 @@
                 <source>label.role_admin</source>
                 <target>Admin</target>
             </trans-unit>
+            <trans-unit id="label.sign_in">
+                <source>label.sign_in</source>
+                <target>Sign in</target>
+            </trans-unit>
+            <trans-unit id="page.sign_in">
+                <source>page.sign_in</source>
+                <target>Sign in</target>
+            </trans-unit>
+            <trans-unit id="title.sign_in">
+                <source>title.sign_in</source>
+                <target>Sign in</target>
+            </trans-unit>
         </body>
     </file>
 </xliff>
